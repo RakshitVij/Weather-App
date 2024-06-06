@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  height: 100vh;
+  background: #000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.weather-input {
+  width: 20%;
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    #e2d2fb,
+    #cdabf6,
+    #bb82ed,
+    #ab55e1,
+    #9c0ad2
+  );
+  padding: 1rem 2.5rem;
+}
+
+.weather-icon {
+  background-position: 50% !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  display: block;
+  height: 25%;
+  margin: 2rem auto;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.input-group input {
+  background: #f8f8f8;
+  text-transform: capitalize;
+  padding: 0.8rem;
+  font-size: 14px;
+  border-radius: 6px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.input-group .converter {
+  position: absolute;
+  right: 45px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.input-group .fa-search {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.weather-output {
+  width: 81%;
+  position: fixed;
+  inset: 0;
+  margin-top: 4%;
+  margin-left: 20%;
+  padding: 2rem 1rem;
+  background: #000;
+  overflow: auto;
+}
+
+.weather-output .heading {
+  color: #ccc;
+  font-size: 2.7rem;
+  font-family: monospace;
+  margin: 1rem 0;
+}
+
+.weather-input .feelsLike,
+.weather-input .description,
+.weather-input .date,
+.weather-input .city {
+  padding: 10px 0;
+}
+
+.temperature {
+  font-size: 4rem;
+  text-align: center;
+  display: flex;
+  font-weight: 300;
+}
+
+.temperature span {
+  font-size: 2rem;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-flow: row;
+  row-gap: 1rem;
+  column-gap: 10px;
+}
+
+.highlights div {
+  height: 180px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(
+    circle,
+    #e2d2fb,
+    #cdabf6,
+    #bb82ed,
+    #ab55e1,
+    #9c0ad2
+  );
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.highlights i {
+  font-size: 40px;
+}
+
+.sun span {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.description i {
+  font-size: 25px;
+}
