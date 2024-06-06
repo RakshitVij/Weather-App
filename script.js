@@ -16,9 +16,8 @@ const userLocation = document.getElementById("userLocation"),
   PValue = document.getElementById("PValue"),
   forecast = document.querySelector(".forecast");
 
-WEATHER_API_ENDPOINT = `https://api.openweathermap.org/data/2.5/weather?appid=fc284e390ceca2732a2c689683bbc307&q=`;
-WEATHER_DATA_ENDPOINT =
-  "https://api.openweathermap.org/data/2.5/weather?appid=fc284e390ceca2732a2c689683bbc307&exclude=minutely&units=metric&";
+WEATHER_API_ENDPOINT = ``;
+WEATHER_DATA_ENDPOINT = "";
 
 function findUserLocation() {
   fetch(WEATHER_API_ENDPOINT + userLocation.value)
